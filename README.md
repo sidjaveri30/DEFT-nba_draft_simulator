@@ -6,11 +6,8 @@
 - [Introduction](#introduction)
 - [Project Structure](#project-structure)
 - [Dataset](#dataset)
-- [Installation](#installation)
-- [Usage](#usage)
 - [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
@@ -30,15 +27,14 @@ The project consists of the following components:
 
 ## Dataset
 
-### Draft Odds 2023
-- **Source**: NBA 2023 Draft Prediction markets
+### Draft Odds 
 - **Columns**:
-  - Player Name
-  - Draft Odds
-  - Projected Pick
+  - Team Name
+  - Seed
+  - Chances
+  - Percentage Points for Draft Picks 1-30
 
-### Player Stats 2023
-- **Source**: NBA Player Statistics for the 2023 season
+### Player Stats 
 - **Columns**:
   - Player Name
   - Team
@@ -51,13 +47,19 @@ The project consists of the following components:
   - Free Throw Percentage (FT%)
   - Advanced metrics (PER, WS, BPM, etc.)
 
-## Installation
+ ### NBA Teams Final
+ - **Columns**:
+   - Team
+   - Star Potential Need
+   - Shooting Need
+   - Offense Need
+   - Defense Need
+   - Rebounding Need
+   - Playmaking Need
+ 
 
-To run this project locally, follow these steps:
+## **Results**
+The model was successful in emulating similar results to the actual 2022 and 2023 NBA drafts. The first 30 selections of the draft were included in the simulation. The results of the draft were slightly different with each iteration of the simulation. The earlier picks in the simulation were very similar to the real draft, whcih was expected because the caliber of players who are selected earlier in the draft is more solidified. There was more variation in the draft picks in the latter part of the simulation because the players' skillsets were much more comparable, leading to different results in comparison to the actual 2022 and 2023 drafts.
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/NBA-Draft-2023.git
-   cd NBA-Draft-2023
 
 
